@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F5F5F5;
+}
+nav{
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+nav .nav-con{
+    text-align: right;
+    padding:2px 20px 0 0;
+    color: #ABB2B8;
+}
+nav .nav-con span{
+    padding: 0 8px;
+}
+.nav-row{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 10px 5px 10px;
+}
+.navLinks ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.navLinks ul li a{
+    text-decoration: none;
+    color: #383838;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 30px;
+}
+.navLinks ul li a.active{
+    color: #D23333;
+}
+.nav-icons i{
+    color: #ABB2B8;
+    margin: 0 5px;
+}
+.logo img{
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+.section{
+    background:linear-gradient(rgb(0, 0, 0, 0.5),rgb(0, 0, 0, 0.5)), url(../img/fashion1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.text{
+padding: 300px 0 0 0;
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text h1{
+    font-size: 50px;
+}
+.text p{
+    font-size: 25px;
+}
+.section3{
+    background-color: #faf4f4;
+    padding: 35px 0;
+}
+.section3 h3{
+    padding: 20px;
+    font-style: italic;
+    font-size: 40px;
+    font-family:'Fraunces';
+}
+
+.section3-row{
+    display: flex;
+    margin:0;
+}
+.section3-col{
+    background-color: white;
+    padding: 10px;
+    gap: 3px;
+}
+.section3-col:hover{
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 20px 0 lightgray;
+}
+
+.section3-col h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: bold;
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+.section3-col h4{
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}
+.section3-col p{
+    text-align: left;
+    padding:15px 35px;
+}
+
+@media(max-width: 501px){
+    .section3-row{
+        flex-direction: column;
+    }
+    .section3-col{
+        font-family:'Fraunces' ;
+    }
+    .section3-col h4{
+       font-weight: 600;
+        text-align: center;
+        padding: 0px;
+    }
+}
+@media screen and (min-width:502px) and (max-width:958px){
+    .section3-row{
+        flex-direction: column;
+    }
+    .section3-col p{
+        font-size: 20px;
+    }
+}
+
+/* -------------------section4---------------- */
+.section4{
+   margin: 8%;
+}
+.section4-row{
+    display: flex;
+    gap:15px;
+    margin:5% 2% 0 2%;
+}
+.section4 h3{
+    font-style: italic;
+    font-size: 40px;
+    font-family:'Fraunces';
+}
+.section4-col{
+    background-color: #FBFBFB;
+    padding: 10px;
+    flex-basis: 31%;
+    margin-bottom: 15px;
+    font-family: 'Fraunces';
+}
+.section4-col:hover{
+    box-shadow: 0 0 20px 0 lightgray;
+}
+@media(max-width:480px){
+    .section4 h3{
+        font-size: 26px;
+    }
+    .section4-row{
+        flex-direction: column;
+    }
+    .section4-col img{
+        width: 40px;
+        height: auto;
+        margin: 20px;
+    }
+    .section4-col p{
+        padding: 0 30px;
+    }
+}
+
+/* ----------------section5----------------- */
+.section5{
+    background-color: #faf4f4;
+    padding: 100px;
+}
+.section5 h3{
+    font-style: italic;
+    font-size: 50px;
+    font-family:'Fraunces';
+    padding: 10px;
+}
+.section5-row{
+    display: flex;
+    gap: 10px;
+}
+.section5-col{
+    flex-basis: 50%;
+    box-shadow: 0 0 10px 0 lightgray;
+    background-color: white;
+    padding: 10px 20px;
+}
+.section5-col:hover{
+    box-shadow: 0 0 20px 0 lightgray;
+}
+.section5-col-text{
+    font-family:'Fraunces';
+    font-weight: 800px;
+    padding: 20px 0;
+}
+@media screen and (min-width:100px) and (max-width:361px){
+    .section5{
+        padding: 10px;
+    }
+    .section5-col img{
+        width: 260px;
+        margin: 0 auto;
+    }
+    .section5-row{
+        flex-direction: column;
+    }
+    .section5 h3{
+        font-size: 35px;
+    }
+    .section5-col{
+        padding: 20px;
+    }
+}
+@media screen and (min-width:362px) and (max-width:500px){
+    .section5{
+        padding: 10px;
+    }
+    .section5-row{
+        flex-direction: column;
+    }
+    .section5-col{
+        padding: 25px;
+    }
+    .section5-col img{
+        width: 330px;
+        margin: 0 auto;
+    }
+    .section5 h3{
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:958px){
+    .section5-row{
+        flex-direction: column;
+    }
+    .section5-col{
+        padding: 40px;
+    }
+    .section5-col img{
+        width: 510px;
+        margin: 0 auto;
+    }.section5 h3{
+        font-size: 70px;
+    }
+
+}
+/* ------------section6--------------- */
+.section6{
+    background-color:white;
+    padding:20px 80px 80px 80px;
+}
+.section6 h3{
+    font-style: italic;
+    font-size: 50px;
+    font-family:'Fraunces';
+    padding: 10px;
+}
+.section6-row{
+    display: flex;
+    gap: 15px;
+}
+.section6-row-icon{
+    color:#ffce31;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.c1{
+    background: #F6F5F5;
+    padding: 30px 20px;
+    margin: 30px 0;
+}
+.c1:hover{
+    box-shadow: 0 0 20px 0 lightgray;
+}
+.c2{
+    background: #F6F5F5;
+    padding: 30px 20px;
+}
+.c2:hover{
+    box-shadow: 0 0 20px 0 lightgray;
+}
+.section6-row p{
+    font-family:'Fraunces';
+    font-weight: 800px;
+    color: #848381;
+    padding: 10px;
+}
+
+
+@media(max-width:480px){
+    .section6{
+        padding: 20px;
+    }
+    .section6 h3{
+        font-size: 34px;
+    }
+    .section6-row{
+        flex-direction: column;
+    }
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    color: #ABB2B8;
+}
+.footer-col{
+    flex-basis: 35%;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #ABB2B8;
+}
+.footer h4{
+    font-size: 17px;
+    font-family: 'Roboto';
+    padding: 10px 0;
+    color: white;
+}
+.footer-col p{
+    font-size: 15px;
+    padding: 5px 0;
+}
+.footer-col p span{
+    color: #D23333;
+}
+.footer-icons i{
+    color: #D23333;
+    font-size: 25px;
+    padding: 10px 5px;
+}
+.copyright{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+
+
+
+
+
